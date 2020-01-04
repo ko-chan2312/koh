@@ -1,0 +1,119 @@
+html{
+  height: 100%;
+}
+body{
+  list-style: none;
+  text-align: center;
+  height:100%;
+  margin:0;
+  font-family: '';
+  background-color: #EEEEEE;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+
+header{
+  float:left;
+  width:100%;
+  position: fixed;
+  top:0;
+  background-color:#0066FF;
+  z-index:10;
+}
+.top-wrapper-inner{
+  height:700px;
+  background-image: url(https://www.pakutaso.com/shared/img/thumb/macbook1991_TP_V.jpg);
+  background-size: cover;
+  height:100%;
+  position: relative;
+}
+.top-wrapper-inner:before{
+  content:'';
+  background-color: rgba(0,0,0,0.5);
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
+.top-description{
+  color:white;
+  padding-top: 300px;
+  font-size: 30px;
+  opacity:0.9;
+}
+.top-description1 p{
+border-bottom:  white  solid 3px;
+}
+
+
+
+.introduction{
+  height: 500px;
+
+}
+.top-container a{
+  float:left;
+  padding:0 10px;
+  color:white;
+
+}
+.top-container li{
+  float: left;
+}
+.top-container{
+  float:left;
+}
+.top-description p{
+  border: 10px;
+}
+.heading-intro{
+  padding-top: 150px;
+}
+.container{
+  opacity : 0.1;
+  transform : translate(0, 50px);
+  transition : all 500ms;
+}.container.scrollin{
+  opacity: 1;
+  transform: translate(0,0);
+}
+
+.skill{
+  height:500px;
+  background-color: #0066FF;
+  color:white;
+}
+.heading-introheading-skill{
+  padding-top: 120px;
+}
+.portfolio{
+  height:300px;
+}
+
+
+
+footer{
+  width:100%;
+
+}
+.footer-nav{
+  text-align: left;
+  background-color: #0066FF;
+}
+.footer-nav li{
+  float:left;
+  padding:0 10px;
+}
+.footer-nav a{
+  color:white;
+}
+.copyright{
+  text-align: right;
+  color: white;
+}
