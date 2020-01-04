@@ -95,7 +95,9 @@ border-bottom:  white  solid 3px;
 .portfolio{
   height:300px;
 }
-
+.skill-link{
+  text-decoration: underline;
+}
 
 
 footer{
