@@ -122,3 +122,9 @@ footer{
   text-align: right;
   color: white;
 }
+@media all and (max-width:670px ){
+  .top-description{
+    padding-top: 100px;
+  }
+
+}
