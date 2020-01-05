@@ -30,7 +30,6 @@ header{
 }
 .menu-show{
   float:right;
-  display:block;
 }
 .menu-show a{
   float:left;
@@ -110,6 +109,9 @@ border-bottom:  white  solid 3px;
 }
 .portfolio{
   height:300px;
+}
+.port1{
+  padding-top:50px;
 }
 .skill-link{
   text-decoration: underline;
