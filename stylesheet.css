@@ -41,9 +41,6 @@ header{
 .menu-show li{
   float: left;
 }
-.header-right{
-  display: none;
-}
 .top-wrapper-inner{
   height:700px;
   background-image: url(https://www.pakutaso.com/shared/img/thumb/macbook1991_TP_V.jpg);
@@ -138,15 +135,4 @@ footer{
   text-align: right;
   color: white;
 }
-@media all and (max-width:670px ){
-  .menu-show{
-    display: none;
-  }
-  .menu-click{
-    display:block;
-  }
-  .top-description{
-    padding-top: 100px;
-  }
 
-}
