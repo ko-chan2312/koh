@@ -9,5 +9,7 @@ $(function(){
         }
     });
 });
-
+$('.menu-click').click(function(){
+ $('.menu-hide').show();
+});
 });
