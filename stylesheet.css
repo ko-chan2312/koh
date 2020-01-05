@@ -79,15 +79,7 @@ border-bottom:  white  solid 3px;
   font-size:25px;
 
 }
-.top-container li{
-  float: left;
-}
-.top-container{
-  float:left;
-}
-.top-description p{
-  border: 10px;
-}
+
 .heading-intro{
   padding-top: 150px;
 }
