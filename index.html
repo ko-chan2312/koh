@@ -1,136 +1,120 @@
-*{
-  box-sizing: border-box;
-}
-body{
-  margin: 0;
-  text-align: center;
-  height:100%;
-  background-color: #0066FF;
-}
-li{
-  list-style: none;
-}
-a{
-  text-decoration: none;
-}
-header{
-  height: 50px;
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  background-color: #0066FF;
-  width: 100%;
-}
-.top-container a{
-  float: left;
-  color: white;
-  font-size: 30px;
-}
-.header-right-iphone{
-  display: none;
-  float:right;
-}
-.menu-click{
-  color: white;
-  height: 50px;
-}
-.menu-list a{
-  color: white;
-}
-.top-wrapper{
-  background-color: white;
-}
-.top-wrapper-inner{
-  background-image: url(https://pakutaso.cdn.rabify.me/shared/img/thumb/macbook1989.jpg?d=500);
-  background-size: cover;
-  position: relative;
-  height:600px;
-  margin:0;
-}
-.top-wrapper-inner::before{
-  background-color: rgba(0,0,0,0.5);
-  content:'';
-  position: absolute;
-  top:0;
-  right: 0;
-  bottom: 0;
-  left: 0;
- }
- .top-description{
-   opacity:0.9;
- }
- .top-description1 p{
-   padding-top: 200px;
-   font-size: 40px;
- }
- .top-description p, h3{
-   color: white;
- }
- .top-description2{
-   font-size: 30px;
- }
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kohei</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+　<body>
+  <header>
+    <div class="top-container">
+      <a href="#">KOHEI</a>
+    </div>
+    
+       <ul class="menu-show">
+         <li>
+           <a href="#home">ホーム</a>
+         </li>
+         <li>
+           <a href="#introductionid">自己紹介</a></li>
+         <li>
+           <a href="#skillid">スキル</a>
+         </li>
+         <li>
+           <a href="#portfolioid">ポートフォリオ</a>
+         </li>
+        </ul>
+        <div class="header-right-iphone">
+          <a class="menu-click"><i class="fa fa-bars"></i></a>
+          <ul class="menu-list">
+          <li><a href="#home">ホーム</a></li>
+          <li><a href="#introductionid">自己紹介</a></li>
+          <li><a href="#skillid">スキル</a></li>
+          <li><a href="#portfolioid">ポートフォリオ</a></li>
+        </ul>
+        </div>
+        
+         
+   </header>
+   <div class="top-wrapper">
+   <div id="home" class="top-wrapper-inner">
+       <div class="top-description">
+         <div class="top-description1">
+           <p>welcome to my profile site</p>
+         </div>
+         <div class="top-description2">
+           <h3>Self-Introduction</h3>
+           <p>my name is kohei sugino</p>
+          </div>
+       </div>
+   </div>
+   <div id="introductionid" class="introduction">
+     <div class="container">
+         <div class="heading-intro">
+            <h2>about me</h2>
+            <p>-自己紹介-</p>
+         </div>
+         <div class="introduction-me">
+           <p>杉野　航平
+             　三重県四日市市生まれ
+             　<br>慶應義塾大学商学部に通う大学生で趣味でWEB制作をしています。
+             　<br>趣味は料理でマーケティングや株にも関心が高いです。
+           </p>
+         </div>
+        </div>
+     </div>
+   </div>
+  </div>
+   <div id="skillid" class="skill">
+     <div class="container">
+       <div class="heading-introheading-skill">
+         <h2>SKILL</h2>
+         <p>-スキル-</p>
+       </div>
+      <div class="boxprogramming">
+        <i class="desktop">
+          <h3>Programming</h3>
+          <p>主にできることはHTML/CSSのコーディング、ランディングページの制作です。<br>プログラミング言語はHTML/CSS/jQuery/Javascript/Sassを扱った経験があります。</p>
+        </i>
+      </div>
+    </div>
+   </div>
+    <div id="portfolioid" class="portfolio">
+      <div class="container">
+       <div class="port1">
+        <h2>PORTFOLIO</h2>
+        <p>-ポートフォリオ-</p>
+        <a class="skill-link" href="https://ko-chan2312.github.io/koh-2/">Githubで公開しているLPはこちら</a>
+       </div>
+      </div>
+   </div>
+   <footer>
+     <div class="footer-container">
+       <ul class="footer-nav">
+         <li>
+           <a href="#home">HOME</a></li>
+        <li>
+          <a href="#introductionid">INTRODUCTION</a>
+        </li>
+        <li>
+          <a href="skillid">SKILL</a>
+        </li>
+        <li>
+          <a href="portfolioid">PORTFOLIO</a>
+        </li>
+        </ul>
+      
+      <p class="copyright">
+        (c)　SUGINO KOHEI
+      </p>
+         
+  
+     </div>
 
-.menu-show{
-  float: right;
-}
-.menu-show li{
-  float:left;
-  padding: 5px;
-}
-.menu-show a{
-  color: white;
-}
-.introduction{
-  background-color: white;
-  margin:0;
-  height:400px;
-}
-.heading-intro h2{
-  padding-top: 50px;
-}
-.skill{
-  height: 400px;
-  color: white;
-  background-color: #0066FF;
-}
-.heading-introheading-skill h2{
-  padding-top: 50px;
-}
-.portfolio{
- height: 300px;
- background-color: white;
-}
-.port1 h2{
-  padding-top: 50px;
-}
-footer{
-  color: white;
-  width: 100%;
-  height: 5px;
-}
-.footer-nav{
-  float: left;
-}
-.footer-nav li{
-  float: left;
-  padding: 0 5px;
-}
-.footer-nav a{
-  color: white;
-}
-.copyright{
-  color: white;
-  text-align: right;
-}
-@media screen and (max-width: 670px){
-  .menu-show{
-   display: none;
-  }
-
-  .header-right-iphone{
-    display: block;
-  }
-  .menu-list{
-    display: none;
-  }
-}
+   </footer>
+   <script src="script.js"></script>
+</body>
+</html>
