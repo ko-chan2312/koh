@@ -28,7 +28,7 @@ header{
 }
 .header-right-iphone{
   display: none;
-  float: right;
+  float:right;
 }
 .menu-click{
   color: white;
@@ -81,10 +81,6 @@ header{
 }
 .menu-show a{
   color: white;
-}
-.header-right-iphone{
-  display: none;
-  float: left;
 }
 .introduction{
   background-color: white;
