@@ -28,7 +28,7 @@ header{
 }
 .header-right-iphone{
   display: none;
-  float: left;
+  float: right;
 }
 .menu-click{
   color: white;
