@@ -1,16 +1,11 @@
 *{
   box-sizing: border-box;
 }
-html{
-  height: 100%;
-}
 body{
-  list-style: none;
+  margin: 0;
   text-align: center;
   height:100%;
-  margin:0;
-  font-family: '';
-  background-color: #EEEEEE;
+  background-color: #0066FF;
 }
 li{
   list-style: none;
@@ -18,116 +13,123 @@ li{
 a{
   text-decoration: none;
 }
-
-
 header{
-  float:left;
-  width:100%;
+  height: 50px;
   position: fixed;
-  top:0;
-  background-color:#0066FF;
-  z-index:10;
-}
-.menu-show{
-  float:right;
-}
-.menu-show a{
-  float:left;
-  padding:0 10px;
-  color:white;
-
-}
-.menu-show li{
-  float: left;
-}
-.top-wrapper-inner{
-  height:700px;
-  background-image: url(https://www.pakutaso.com/shared/img/thumb/macbook1991_TP_V.jpg);
-  background-size: cover;
-  height:100%;
-  position: relative;
-}
-.top-wrapper-inner:before{
-  content:'';
-  background-color: rgba(0,0,0,0.5);
-  position:absolute;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-}
-.top-description{
-  color:white;
-  padding-top: 300px;
-  font-size: 30px;
-  opacity:0.9;
-}
-.top-description1 p{
-border-bottom:  white  solid 3px;
-}
-
-
-
-.introduction{
-  height: 500px;
-
+  top: 0;
+  z-index: 10;
+  background-color: #0066FF;
+  width: 100%;
 }
 .top-container a{
-  float:left;
-  padding:0 10px;
-  color:white;
-  font-size:25px;
-
+  float: left;
+  color: white;
+  font-size: 30px;
 }
-
-.heading-intro{
-  padding-top: 150px;
+.header-right-iphone{
+  display: none;
 }
-.container{
-  opacity : 0.1;
-  transform : translate(0, 50px);
-  transition : all 500ms;
-}.container.scrollin{
-  opacity: 1;
-  transform: translate(0,0);
-}
-
-.skill{
-  height:500px;
-  background-color: #0066FF;
-  color:white;
-}
-.heading-introheading-skill{
-  padding-top: 120px;
-}
-.portfolio{
-  height:300px;
-}
-.port1{
-  padding-top:50px;
-}
-.skill-link{
-  text-decoration: underline;
-}
-
-
-footer{
-  width:100%;
-
-}
-.footer-nav{
-  text-align: left;
-  background-color: #0066FF;
-}
-.footer-nav li{
-  float:left;
-  padding:0 10px;
-}
-.footer-nav a{
-  color:white;
-}
-.copyright{
-  text-align: right;
+.menu-list a{
   color: white;
 }
+.top-wrapper{
+  background-color: white;
+}
+.top-wrapper-inner{
+  background-image: url(https://pakutaso.cdn.rabify.me/shared/img/thumb/macbook1989.jpg?d=500);
+  background-size: cover;
+  position: relative;
+  height:600px;
+  margin:0;
+}
+.top-wrapper-inner::before{
+  background-color: rgba(0,0,0,0.5);
+  content:'';
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+ }
+ .top-description{
+   opacity:0.9;
+ }
+ .top-description1 p{
+   padding-top: 200px;
+   font-size: 40px;
+ }
+ .top-description p, h3{
+   color: white;
+ }
+ .top-description2{
+   font-size: 30px;
+ }
 
+.menu-show{
+  float: right;
+}
+.menu-show li{
+  float:left;
+  padding: 5px;
+}
+.menu-show a{
+  color: white;
+}
+.header-right-iphone{
+  display: none;
+  float: left;
+}
+.introduction{
+  background-color: white;
+  margin:0;
+  height:400px;
+}
+.heading-intro h2{
+  padding-top: 50px;
+}
+.skill{
+  height: 400px;
+  color: white;
+  background-color: #0066FF;
+}
+.heading-introheading-skill h2{
+  padding-top: 50px;
+}
+.portfolio{
+ height: 300px;
+ background-color: white;
+}
+.port1 h2{
+  padding-top: 50px;
+}
+footer{
+  color: white;
+  width: 100%;
+  height: 5px;
+}
+.footer-nav{
+  float: left;
+}
+.footer-nav li{
+  float: left;
+  padding: 0 5px;
+}
+.footer-nav a{
+  color: white;
+}
+.copyright{
+  color: white;
+  text-align: right;
+}
+@media screen and (max-width: 670px){
+  .menu-show{
+   display: none;
+  }
+
+  .header-right-iphone{
+    display: block;
+  }
+  .menu-list{
+    display: none;
+  }
+}
