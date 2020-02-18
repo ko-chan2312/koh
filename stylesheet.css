@@ -28,13 +28,16 @@ header{
 }
 .header-right-iphone{
   display: none;
+  float: left;
 }
 .menu-click{
-  float:right;
   color: white;
 }
 .menu-list a{
   color: white;
+}
+.menu-list li{
+  float: left;
 }
 .top-wrapper{
   background-color: white;
