@@ -29,6 +29,10 @@ header{
 .header-right-iphone{
   display: none;
 }
+.header-right-iphone i{
+  float:right;
+  color: white;
+}
 .menu-list a{
   color: white;
 }
