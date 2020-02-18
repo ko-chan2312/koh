@@ -29,7 +29,7 @@ header{
 .header-right-iphone{
   display: none;
 }
-.header-right-iphone i{
+.menu-click{
   float:right;
   color: white;
 }
