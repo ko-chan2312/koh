@@ -1,201 +1,147 @@
 *{
-    box-sizing: border-box;
-}
-li{
-    list-style: none;
-}
-a{
-    text-decoration: none;
+  box-sizing: border-box;
 }
 body{
-    margin: 0;
-    text-align: center;
+  margin: 0;
+  text-align: center;
+  height:100%;
+  background-color: #0066FF;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
 }
 header{
-    height: 100px;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: #0066FF;
+  width: 100%;
 }
-.header-block{
-    float: left;
+.container{
+  opacity:0;
+  transform : translate(0, 50px);
+  transition: all 1500ms;
 }
-.header-logo i{
-    margin: 0;
-    float: left;
-    font-size: 50px;
-}
-.header-block li{
-    float:left;
-    margin:0 20px;
-}
-.header-block a{
-    color: white;
-    background-color:#FF6633 ;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-}
-.header-iphone{
-    display: none;
-    float:right;
-    color: black;
-}
-.slideshow{
-    overflow: hidden;
-    position: relative;
-    height:465px;
 
+.container.scrollin{
+  opacity: 1;
+  transform: translate (0, 0);
 }
-.slideshow img{
-    display: none;
-    width:100%;
-    margin:0;
-}
-.top-section{
-    height:300px;
-}
-.top-section i{
-    padding-top:100px;
-    display: block;
-    font-size: 24px;
-}
-.about-top{
-    background-color: #FFDAB9;
-    border: none;
-    border-radius: 20px;
-    margin: 50px;
-    display: block;
-}
-.good-point{
-    padding:30px 0;
-    display: block;
-    background-color: #FFDAB9;
-    border: none;
-    border-radius: 20px;
-    margin:10px;
 
+.top-container a{
+  float: left;
+  color: white;
+  font-size: 30px;
 }
-.good-point h1{
-    font-size: 30px;
+.header-right-iphone{
+  display: none;
+  float:right;
 }
-.top-section{
-    height:1000px;
+.menu-click{
+  color: white;
+  height: 50px;
 }
-.middle-top-section{
-    height:1200px;
+.menu-list a{
+  color: white;
 }
-.middle-top-section i{
-    font-size: 24px;
-    margin: 20px;
+.top-wrapper{
+  background-color: white;
 }
-.middle-top-section img{
-    height:200px;
-    width:200px;
+.top-wrapper-inner{
+  background-image: url(https://pakutaso.cdn.rabify.me/shared/img/thumb/macbook1989.jpg?d=500);
+  background-size: cover;
+  position: relative;
+  height:600px;
+  margin:0;
 }
-.course-menu{
-    padding: 30px 0;
-    display: block;
-}
-.middle-bottom-section{
-    background-color: #e6ecf0;
-    text-align: center;
-    padding-bottom: 80px;
-    color: #5f5d60;
-    height: 400px;
-    margin:10px;
-    border-radius: 20px;
-}
-.middle-bottom-section h5{
-    font-size: 20px;
-    padding-top: 50px;
-}
-.faq-list{
-    width:500px;
-    margin: 0 auto;
-    padding: 0;
+.top-wrapper-inner::before{
+  background-color: rgba(0,0,0,0.5);
+  content:'';
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+ }
+ .top-description{
+   opacity:0.9;
+ }
+ .top-description1 p{
+   padding-top: 200px;
+   font-size: 40px;
+ }
+ .top-description p, h3{
+   color: white;
+ }
+ .top-description2{
+   font-size: 30px;
+ }
 
+.menu-show{
+  float: right;
 }
-.faq-list-item{
-    margin: 10px;
-    border-bottom: 1px solid #ccc;
-    position: relative;
-    cursor: pointer;
-    text-align: center;
+.menu-show li{
+  float:left;
+  padding: 5px;
 }
-.faq-list-item span{
-    position: absolute;
-    top: 0;
-    right:5px;
-    color: #ccc;
-    font-size: 13px;
+.menu-show a{
+  color: white;
 }
-.answer{
-    font-size: 12px;
-    display: none;
-    padding: 5px 0px;
-    margin-bottom: 15px;
+.introduction{
+  background-color: white;
+  margin:0;
+  height:400px;
 }
-.bottom-section{
-    height:400px;
+.heading-intro h2{
+  padding-top: 50px;
 }
-.bottom-section p{
-    padding-top: 50px;
+.skill{
+  height: 400px;
+  color: white;
+  background-color: #0066FF;
 }
-input,textarea{
-    width:80%;
-    margin: 5px;
+.heading-introheading-skill h2{
+  padding-top: 50px;
 }
-input{
-    height:50px;
+.portfolio{
+ height: 300px;
+ background-color: white;
 }
-textarea{
-    height: 100px;
-}
-button{
-    padding:10px 20px;
-    background-color: #FF6633;
-    color:white;
-    border: none;
-    border-radius: 10px;
+.port1 h2{
+  padding-top: 50px;
 }
 footer{
-    background-image: url(https://pakutaso.cdn.rabify.me/shared/img/thumb/fruit1753.jpg?d=500);
-    background-size: cover;
+  color: white;
+  width: 100%;
+  height: 5px;
 }
-footer a{
-    color: black;
+.footer-nav{
+  float: left;
+}
+.footer-nav li{
+  float: left;
+  padding: 0 5px;
+}
+.footer-nav a{
+  color: white;
+}
+.copyright{
+  color: white;
+  text-align: right;
 }
 @media screen and (max-width: 670px){
-    header{
-        position: fixed;
-        top:0;
-        background-color:#FF6633;
-        width:100%;
-        z-index: 10;
-        height: 50px;
-    }
-    .header-logo i{
-        color: white;
-    }
-    .header-iphone{
-        display: block;
-    }
-    .menu-list{
-        display: none;
-    }
-    .header-block{
-        display: none;
-    }
-    .top-section i{
-        padding-top: 10px;
-    }
-    .faq-list-item{
-        width:100%;
-        text-align: center;
-    }
-    button{
-        width: 100%;
-    }
+  .menu-show{
+   display: none;
+  }
 
+  .header-right-iphone{
+    display: block;
+  }
+  .menu-list{
+    display: none;
+  }
 }
-
-
-
